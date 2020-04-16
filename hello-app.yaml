@@ -5,7 +5,7 @@ metadata:
   labels:
     role: app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       role: app
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: <IMAGE_ID>
+        image: yuanchunrong/hello-app:<BUILD_TAG>
         resources:
           requests:
             cpu: 10m
